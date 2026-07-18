@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntQ7 | 前端开发工程师</title>
+  <link rel="icon" href="intQ7.jpg">
+  <!-- Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ==================== 导航栏 ==================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">IntQ7</a>
+      <div class="nav-right">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">关于</a></li>
+          <li><a href="#skills" class="nav-link">技能</a></li>
+          <li><a href="#projects" class="nav-link">项目</a></li>
+          <li><a href="#experience" class="nav-link">经历</a></li>
+          <!-- <li><a href="#blog" class="nav-link">博客</a></li> -->
+          <li><a href="#contact" class="nav-link">联系</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" title="切换主题">
+          <i class="fas fa-sun"></i>
+        </button>
+        <div class="nav-toggle" id="navToggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== 首页 Hero ==================== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-avatar">
+        <img src="intQ7.jpg" alt="头像">
+        <!-- <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=intQ7" alt="头像"> -->
+      </div>
+      <h1 class="hero-name">IntQ7</h1>
+      <p class="hero-title">前端开发工程师</p>
+      <p class="hero-tagline">用代码构建优雅的解决方案，用技术创造实际价值</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/intQ7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.zhihu.com/people/mu-xi-27-91-25" target="_blank" title="掘金"><i class="fab fa-blogger-b"></i></a>
+        <a href="https://blog.csdn.net/qq_45355927?type=blog" target="_blank" title="CSDN"><svg viewBox="0 0 24 24" width="1.8rem" height="1.8rem" fill="currentColor"><text x="12" y="17" text-anchor="middle" font-weight="bold" font-size="9" font-family="Arial,Helvetica,sans-serif">CSDN</text></svg></a>
+        <a href="https://juejin.cn/user/1772834701457230/posts" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a>
+        <!-- <a href="#" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a>
+        <a href="#" target="_blank" title=""><i class="fab fa-twitter"></i></a> -->
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>向下滚动</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <!-- ==================== 关于我 ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <p class="section-subtitle">About Me</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>你好！我是 <strong>IntQ7</strong>，一名经验丰富的前端开发工程师，专注于构建高性能、高质量、跨平台的 Web 与小程序应用。</p>
+          <p>我熟练掌握 <strong>HTML5 / CSS3 / JavaScript (ES6+) / TypeScript</strong>，能够根据交互原型和 UI 设计图完整制作出网页，擅长解决浏览器兼容性问题与性能优化。</p>
+          <p>核心技术栈以 <strong>Vue2 / Vue3</strong> 生态为主，熟练使用 Vuex/Pinia 状态管理、Element UI / Ant Design 等组件库，并具备 <strong>uni-app</strong> 跨端开发经验（Web / 小程序多端适配）。工作中熟练使用 Git（GitHub / 码云）、Webpack 构建工具与 npm 包管理，同时掌握 <strong>ECharts</strong> 数据可视化与高德/百度地图在大屏可视化中的应用。日常开发中深度使用 <strong>ClaudeCode、AtomCode</strong> 等 AI 辅助工具提升效率，对 <strong>React</strong> 基本原理也有一定了解。</p>
+          <div class="about-info">
+            <div><i class="fas fa-map-marker-alt"></i> 深圳 · 中国</div>
+            <div><i class="fas fa-briefcase"></i> 前端开发工程师</div>
+            <div><i class="fas fa-code"></i> 全职前端开发</div>
+            <div><i class="fas fa-mobile-alt"></i> Web / 小程序多端开发</div>
+          </div>
+          <!-- <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> 下载简历</a> -->
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">年经验</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">+ 核心项目</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">技术栈方向</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="1">0</span>
+            <span class="stat-label">家公司 · 长期深耕</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 技能 ==================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">技能栈</h2>
+      <p class="section-subtitle">Skills &amp; Technologies</p>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> 前端基础</h3>
+          <div class="skill-item"><span>HTML5 / CSS3</span><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+          <div class="skill-item"><span>JavaScript (ES6+)</span><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+          <div class="skill-item"><span>TypeScript</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>语义化 / 模块化开发</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>浏览器兼容 / 性能优化</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fab fa-vuejs"></i> Vue 生态</h3>
+          <div class="skill-item"><span>Vue2 / Vue3</span><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+          <div class="skill-item"><span>Vuex / Pinia</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>Element UI / Ant Design</span><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
+          <div class="skill-item"><span>uni-app 跨端开发</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+          <div class="skill-item"><span>React（了解基本原理）</span><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> 工程化 &amp; 工具</h3>
+          <div class="skill-item"><span>Git / GitHub / 码云</span><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
+          <div class="skill-item"><span>Webpack / npm</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+          <div class="skill-item"><span>ECharts 数据可视化</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+          <div class="skill-item"><span>高德 / 百度地图</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+          <div class="skill-item"><span>ClaudeCode / AtomCode (AI)</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+        </div>
+      </div>
+      <!-- 标签云 -->
+      <div class="tags-cloud">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>Vue2</span>
+        <span>Vue3</span><span>Vuex</span><span>Pinia</span><span>uni-app</span><span>Element UI</span>
+        <span>Ant Design</span><span>ECharts</span><span>高德地图</span><span>百度地图</span><span>Webpack</span>
+        <span>Git</span><span>npm</span><span>ClaudeCode</span><span>AtomCode</span><span>React</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 项目 ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">项目作品</h2>
+      <p class="section-subtitle">Projects</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img" style="background:#667eea">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="project-body">
+            <h3>安心小区 · 智慧便民服务平台</h3>
+            <p>为街道社区量身定制的微信小程序，涵盖访客登记、扫码开门、物业报修、居民投诉、租售信息展示等核心功能。主导三大核心模块的全流程开发，设计访客预约-审批-扫码入园机制，对接门禁系统接口实现临时权限动态管理。</p>
+            <div class="project-tags">
+              <span>Vue</span><span>uni-app</span><span>uCharts</span><span>小程序</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" title="源码"><i class="fab fa-github"></i></a>
+              <a href="#" title="在线演示"><i class="fas fa-external-link-alt"></i></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" style="background:#e17055">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-body">
+            <h3>智慧监区管理系统</h3>
+            <p>监狱车间及监区综合信息化解决方案，包含车间管控平台、智慧监区管理、大屏展示系统。支撑电子点名、设备管理、电子围栏、实时定位、服刑人员管理等核心业务。负责应用管理、审核管理两大模块的完整功能开发。</p>
+            <div class="project-tags">
+              <span>Vue3</span><span>TypeScript</span><span>Ant Design</span><span>大屏</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" title="源码"><i class="fab fa-github"></i></a>
+              <a href="#" title="在线演示"><i class="fas fa-external-link-alt"></i></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" style="background:#00b894">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="project-body">
+            <h3>物联网运营平台</h3>
+            <p>实现设备的统一纳管、物模型配置、设备接入适配管理等功能平台。基于 Vue+Vuex+Element-ui 技术栈，负责应用管理、审核管理两大模块的增删改查功能开发，完成后端接口对接与数据交互。</p>
+            <div class="project-tags">
+              <span>Vue</span><span>Vuex</span><span>Element UI</span><span>IoT</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" title="源码"><i class="fab fa-github"></i></a>
+              <a href="#" title="在线演示"><i class="fas fa-external-link-alt"></i></a>
+            </div> -->
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img" style="background:#6c5ce7">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="project-body">
+            <h3>西客站疫情流动监管大数据平台</h3>
+            <p>查看来兰人员信息的大屏可视化平台，包括今日省内省外来兰人数、中高风险地区信息、健康码信息展示。使用 ECharts 绘制来兰人数趋势图，Swiper 轮播中高风险地区信息，Axios 完成接口数据对接。</p>
+            <div class="project-tags">
+              <span>Vue</span><span>ECharts</span><span>Axios</span><span>Swiper</span><span>大屏</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" title="源码"><i class="fab fa-github"></i></a>
+              <a href="#" title="在线演示"><i class="fas fa-external-link-alt"></i></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 个人经历/工作经历 ==================== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">个人经历</h2>
+      <p class="section-subtitle">Experience</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020.11 - 2025.04</div>
+          <div class="timeline-content">
+            <h3>前端开发工程师</h3>
+            <!-- <p class="timeline-company">兰州飞天网景信息产业有限公司</p> -->
+            <p>参与公司内部后台管理系统统一框架搭建，基于 Vue 技术栈实现通用权限控制、菜单路由、表单组件等模块，提升新项目的开发复用性与一致性。对 ECharts 进行二次封装，大幅提升可视化模块开发效率。参与后台管理系统功能迭代与优化（用户管理、数据大屏、报表分析），封装维护常用 UI 组件，协助后端完成接口联调，保障系统高效稳定上线。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017 - 2021</div>
+          <div class="timeline-content">
+            <h3>软件工程 · 本科</h3>
+            <!-- <p class="timeline-company">兰州理工大学技术工程学院</p> -->
+            <!-- <p>主要课程：C 语言、C++、数据结构、C#、操作系统、计算机网络、计算机组成原理、java、软件工程、微机原理、数据库。</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 博客 ==================== -->
+  <!-- <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section-title">最新博客</h2>
+      <p class="section-subtitle">Blog Posts</p>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+            <span class="blog-category">前端</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> 2025-12-20</span>
+            <h3>从 Vue2 到 Vue3 迁移实战总结</h3>
+            <p>本文记录了将一个中型项目从 Vue2 迁移到 Vue3 + Composition API 的全过程，包括踩坑记录和性能对比数据。</p>
+            <a href="#" class="blog-readmore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img" style="background:linear-gradient(135deg,#f093fb,#f5576c)">
+            <span class="blog-category">后端</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> 2025-11-15</span>
+            <h3>Node.js 性能优化最佳实践</h3>
+            <p>从事件循环、内存泄漏排查、异步并发控制等维度，分享 Node.js 服务端性能优化的实战经验。</p>
+            <a href="#" class="blog-readmore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
+            <span class="blog-category">DevOps</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> 2025-10-08</span>
+            <h3>基于 Docker 的前端自动化部署</h3>
+            <p>详细讲解如何使用 Docker + Nginx + GitHub Actions 搭建前端自动化部署流水线，实现一键发布。</p>
+            <a href="#" class="blog-readmore">阅读全文 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center" style="margin-top:2.5rem">
+        <a href="#" class="btn btn-outline">查看更多文章 <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ==================== 联系我 ==================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="section-subtitle">Get In Touch</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div><h4>邮箱</h4><p>intq7@foxmail.com</p></div>
+          </div>
+          <!-- <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div><h4>GitHub</h4><p>github.com/intQ7</p></div>
+          </div> -->
+        </div>
+        <!-- <div class="contact-info">
+          <div class="contact-item">
+            <i class="fab fa-weixin"></i>
+            <div><h4>微信</h4><p>zhangsan_dev</p></div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div><h4>电话</h4><p>+86 138-0000-0000</p></div>
+          </div>
+        </div> -->
+        
+        <form id="contactForm"></form> 
+        <!-- <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="你的姓名" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="你的邮箱" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="主题">
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="想说的话..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">发送消息 <i class="fas fa-paper-plane"></i></button>
+        </form> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-social">
+        
+        <a href="https://github.com/intQ7" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.zhihu.com/people/mu-xi-27-91-25" target="_blank" title="掘金"><i class="fab fa-blogger-b"></i></a>
+        <a href="https://blog.csdn.net/qq_45355927?type=blog" target="_blank" title="CSDN"><svg viewBox="0 0 24 24" width="1.8rem" height="1.8rem" fill="currentColor"><text x="12" y="17" text-anchor="middle" font-weight="bold" font-size="9" font-family="Arial,Helvetica,sans-serif">CSDN</text></svg></a>
+        <a href="https://juejin.cn/user/1772834701457230/posts" target="_blank" title="知乎"><i class="fab fa-zhihu"></i></a>
+        <!-- <a href="#" target="_blank" title="邮箱"><i class="fas fa-envelope"></i></a>
+        <a href="#" target="_blank" title=""><i class="fab fa-twitter"></i></a> -->
+      </div>
+      <p class="footer-text">
+        &copy; 2026 IntQ7. Built with <i class="fas fa-heart" style="color:#e74c3c"></i> 
+        | <i class="fas fa-code"></i> 用心写每一行代码
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== 回到顶部 ==================== -->
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
